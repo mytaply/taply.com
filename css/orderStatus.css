@@ -1,0 +1,177 @@
+/* ------------------------------------order status------------------------------------ */
+.order-status-found {
+    padding-top: 5rem;
+}
+.display-status .order-status-row {
+    padding-top: 0;
+}
+.order-status-row h2 {
+    font-size: 3.4rem;
+    font-weight: var(--bold-font);
+    color: var(--color-text-muted);
+    text-align: center;
+}
+.order-status-box {
+    width: 80%;
+    background: var(--color-bg-section);
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+.order-status-box h3 {
+    font-size: 2rem;
+    font-weight: var(--medium-font);
+    color: var(--color-text-main);
+    margin-bottom: 1.5rem;
+}
+.order-status-box .time-line-box {
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.time-line-box .status-icons {
+    font-size: 3.5rem;
+    color: var(--color-border);
+    position: relative;
+}
+.time-line-progress-box {
+    width: 100%;
+    height: .4rem;
+    background: var(--color-border);
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+.time-line-progress {
+    width: 0%;
+    height: .4rem;
+    background: var(--color-btn-primary-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.status-check-line {
+    width: .4rem;
+    height: 80%;
+    background: var(--color-border);
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.status-check {
+    font-size: 1.6rem;
+    color: var(--color-border);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--color-border);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    bottom: -5.25rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.order-status-details-box {
+    margin-top: 3rem;
+}
+.order-status-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3.5%;
+}
+.order-status-details .details-box {
+    min-width: 31%;
+    height: 10rem;
+    background: var(--color-bg-page);
+    border: .1rem solid var(--color-border);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    font-size: 1.5rem;
+    font-weight: var(--light-font);
+    color: var(--color-text-main);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-negative: inherit;
+        flex-shrink: inherit;
+}
+.order-status-details .details-box span {
+    font-size: 1.8rem;
+    font-weight: var(--medium-font);
+    color: var(--color-text-main);
+}
+.status {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+#status {
+    background: #3498db;
+    color: var(--color-text-inverse);
+    text-transform: capitalize;
+    padding: .2rem 1rem;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+.order-status-box p {
+    font-size: 1.4rem;
+    font-weight: var(--regular-font);
+    color: var(--color-text-main);
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.order-status-found .order-status-box {
+    width: 50%;
+}
+.display-status { display: none; }
