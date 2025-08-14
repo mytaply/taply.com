@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" data-href-col="0" href="" type="image/x-icon">
+    <title>Taply | Contact us</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/orderStatus.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav id="navbar">
+      <!-- Loading Bar -->
+      <div id="loading-bar"></div>
+        <div class="row">
+            <div class="nav-content">
+                <button class="three-desh-btn" popovertarget="side-menu"><i class="fa-duotone fa-regular fa-bars"></i></button>
+                <ul id="side-menu" popover>
+                    <div class="close-side-bar-box">
+                        <button class="three-desh-btn three-desh-btn-close" popovertarget="side-menu" popovertargetactive="hide"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <li class="menu-item"><a href="../home/" style="color: #3e88ff;">Home</a></li>
+                    <li class="menu-item dropdown">
+                        <a class="dropdown-link">Products <i style="rotate: -90deg;" class="fa-duotone fa-regular fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-side-menu">
+                            <li><a class="dropdown-li" href="../PVC white material NFC desital business card/">PVC Card without "NFC"</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="../design/">card design</a></li>
+                    <li class="menu-item"><a href="../about/">About us</a></li>
+                    <li class="menu-item"><a href="../contact/">Contact us</a></li>
+                </ul>
+                <div class="logo">
+                    <a id="mainLogo" href="../home/"><h3>Taply<sup> BD</sup></h3></a>
+                    <a id="subLogo" href="../home/"><h3>Taply<sup> BD</sup></h3></a>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="../home/">Home</a></li>
+                    <li class="menu-item dropdown">
+                        <a class="dropdown-link">Products <i class="fa-duotone fa-regular fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-li" href="../PVC white material NFC desital business card/">PVC Card without "NFC"</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="../design/">card design</a></li>
+                    <li class="menu-item"><a href="../about/">About us</a></li>
+                    <li class="menu-item"><a href="../contact/">Contact us</a></li>
+                </ul>
+                <div class="orders">
+                    <a href="../status/" style="color: #3e88ff;">
+                        <i class="fa-light fa-bag-shopping hide"></i>
+                        <i class="fa-solid fa-bag-shopping show"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main-context -->
+    <section class="order-status-found">
+        <div class="row order-status-row">
+          <h2>Check Your Order Status</h2>
+          <div class="order-status-box">
+            <h3>Order ID or Email Address:</h3>
+            <!-- Added an id to the input field for easier selection -->
+            <div class="form-group">
+              <input type="text" id="order-input" placeholder="" required>
+              <label for="order-input">Enter your Order ID or Email</label>
+            </div>
+            <button id="check-status" class="btn btn-secondary">check status</button>
+          </div>
+        </div>
+      </section>
+    
+      <section class="display-status">
+        <div class="row order-status-row">
+          <h2>Order Status</h2>
+          <div class="order-status-box">
+            <h3>Order Timeline</h3>
+            <div class="time-line-box">
+                <div class="status-icons stmiOne"><div class="status-check stmOne"></div><div class="status-check-line stmOne"></div><i class="fa-light fa-microchip"></i></div>
+                <div class="status-icons stmiTow"><div class="status-check stmTow"></div><div class="status-check-line stmTow"></div><i class="fa-light fa-object-group"></i></div>
+              <div class="status-icons stmiThree"><div class="status-check stmThree"></div><div class="status-check-line stmThree"></div><i class="fa-light fa-print"></i></div>
+              <div class="status-icons stmiFore"><div class="status-check stmFore"></div><div class="status-check-line stmFore"></div><i class="fa-light fa-box-taped"></i></div>
+              <div class="status-icons stmiFive"><div class="status-check stmFive"></div><div class="status-check-line stmFive"></div><i class="fa-light fa-truck-clock"></i></div>
+              <div class="status-icons stmiSix"><div class="status-check stmSix"></div><div class="status-check-line stmSix"></div><i class="fa-light fa-box-circle-check"></i></div>
+            </div>
+            <div class="time-line-progress-box"><div class="time-line-progress"></div></div>
+    
+            <div class="order-status-details-box">
+              <h3>Your Digital Business Card</h3>
+              <div class="order-status-details">
+                <div class="details-box">
+                  <span>order id</span>
+                  <div class="status" id="order-id"></div>
+                </div>
+                <div class="details-box">
+                  <span>customer name</span>
+                  <div class="status" id="customer-name"></div>
+                </div>
+                <div class="details-box">
+                  <span>email</span>
+                  <div class="status" id="email"></div>
+                </div>
+                <div class="details-box">
+                  <span>status</span>
+                  <div class="status status-bg" id="status"></div>
+                </div>
+                <div class="details-box">
+                  <span>Last update</span>
+                  <div class="status" id="date"></div>
+                </div>
+              </div>
+            </div>
+            <p>Need help? Contact our support team at ibrahim094islam@gamil.com<br> or call +880 1908-111251 QUICK-CARD</p>
+          </div>
+        </div>
+      </section>
+    <!-- footer section -->
+    <footer>
+      <div class="footer-container row">    
+          <!-- Main Footer Content -->
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="brand-info">
+                      <h4 class="logo">Taply</h4>
+                      <p class="brand-tagline">Digital Business Solutions</p>
+                      <div class="social-links">
+                          <a href="https://www.facebook.com/ibrahim094is" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/ibrahim094is/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.youtube.com/@Ibrahim_gd" target="_blank" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+                          <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="footer-section">
+                  <h4>Products</h4>
+                  <ul class="footer-menu">
+                      <li><a href="../PVC white material NFC desital business card/"><i class="fas fa-chevron-right"></i> NFC Digital Cards</a></li>
+                      <li><a href="../contact/"><i class="fas fa-chevron-right"></i> Premium Solutions</a></li>
+                      <li><a href="../design/"><i class="fas fa-chevron-right"></i> Custom Designs</a></li>
+                  </ul>
+              </div>
+  
+              <div class="footer-section">
+                  <h4>Company</h4>
+                  <ul class="footer-menu">
+                      <li><a href="../about/"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                  </ul>
+              </div>
+  
+              <div class="footer-section">
+                  <h4>Support</h4>
+                  <ul class="footer-menu">
+                      <li><a href="../contact/"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                      <li><a href="#"><i class="fas fa-chevron-right"></i> Documentation</a></li>
+                      <li><a href="../contact/"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <div class="footer-bottom">
+              <div class="legal-links">
+                  <a href="../about/">Privacy Policy</a>
+                  <a href="../contact/">Terms of Service</a>
+              </div>
+              <p>&copy; 2024 Taply Digital Solutions. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+    <!-- script -->
+    <script src="../js/database.js"></script>
+    <script src="../js/orderStatus.js"></script>
+</body>
+</html>
